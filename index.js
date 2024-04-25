@@ -16,8 +16,6 @@ const http = axios.create({
 	}
 })
 
-console.log(process.env.API_KEY)
-
 
 async function main() {
 	const data = await http.get('/exercises?limit=20000').then((res) => res.data)
